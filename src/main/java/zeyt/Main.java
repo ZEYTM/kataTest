@@ -14,7 +14,7 @@ public class Main {
         }
         String numbers = " 0 1 2 3 4 5 6 7 8 9 10 ";
         String romNumbers = "  I II III IV V VI VII VIII IX X";
-        // Определяем риские ли цифры
+        // Определяем римские ли цифры
         if (romNumbers.contains(arrayRoman[0]) && romNumbers.contains(arrayRoman[1])) {
 
             String inputRoman1 = arrayRoman[0].trim();// Удаляем пробелы
@@ -45,8 +45,6 @@ public class Main {
                 }
                 if (arrayRoman1[i] == '/') {
                     result = number1 / number2;
-                } else {
-                    throw new IOException();
                 }
             }
             System.out.println(convertNumToRoman(result));
@@ -59,7 +57,7 @@ public class Main {
             for (int i = 0; i < userInput.length(); i++) {
                 array1[i] = userInput.charAt(i);
                 int a = Integer.parseInt(input1);// Конвертируем стринговую в intoвую переменную
-                int b = Integer.parseInt(input2);// Конвертируем стринговую в intoвую переменную
+                int b = Integer.parseInt(input2);// Конвертируем стринговую в intoвую переменную'
 
                 // Определяем символ +-*/ и проводим соответствующую операцию
                 if (array1[i] == '+') {
